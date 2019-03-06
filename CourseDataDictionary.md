@@ -27,12 +27,12 @@
 - end: String of the date and time the course concludes.
 </>
 ## CourseCatalog
-- program_code
+- program_code : Identifies the type of program. 
 - program_name
 - catalog_id
-- course_title
-- credits
-- prereqs
+- course_title : Name of the class at the time.
+- credits: 
+- prereqs: Fundamentl classes needed 
 - coreqs
 - fees
 - attributes
