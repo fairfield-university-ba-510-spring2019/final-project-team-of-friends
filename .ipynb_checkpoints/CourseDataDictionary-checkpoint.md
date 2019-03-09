@@ -1,6 +1,6 @@
-## Data Dictionary _define every column on every table_
-</> 
-## COURSES Table
+## Data Dictionary _defining every column on every table_
+
+## COURSES 
 | Attribute | Description |
 | --- | --- |
 | CID | Surrogate key which identifies a specific course. |
@@ -17,15 +17,15 @@
 | Act | Actual amount of students rolled in the course. |
 | Rem | Amount of spots remaining in the course. |
 
-</>
-## FACULTY Table
+
+## FACULTY 
 | Attribute | Description |
 | --- | --- |
 | FID | Surrogate key which identifies a specific instructor.|
 | Primary_Instructor | The professor who teaches the course. |
 
-</>
-## COURSE_MEETINGS Table
+
+## COURSE MEETINGS 
 | Attribute | Description |
 | --- | --- |
 | CMID | Surrogate key which identifies a specific course meeting. |
@@ -36,8 +36,7 @@
 | Start | String of the date and time when a section begins. |
 | End | String of the date and time when a section concludes. |
 
-</>
-## COURSE_CATALOG Table
+## COURSE_CATALOG
 | Attribute | Description |
 | --- | --- |
 | CatID | Surrogate key which identifies a specific course within the catalog. |
