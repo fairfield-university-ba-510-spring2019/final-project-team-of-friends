@@ -1,39 +1,53 @@
 ## Data Dictionary _define every column on every table_
 </> 
-## Courses
-- term: Season of the year that the course is offered.
-- crn: Course reference number
-- catalog_id: Abbreviated course identification with course subject and number. 
-- section: 
-- credits: Number of credits each course counts for.
-- title: The name of the course.
-- meetings: A dictionary of the 'timecodes' data with keys and values
-- timecodes: String of course day, meeting times, dates, and meeting location.
-- primary_instructor: The professor signed on to teach the course.
-- cap: the maximum amount of students allowed to enroll in the course.
-- act: the actual amount of students enrolled in the course.
-- rem: the amount of spots available in the course.
+## COURSES Table
+| Attribute | Description |
+| --- | --- |
+| CID | Surrogate key which identifies a specific course. |
+| Term | Season of the year in which the course is offered. |
+| CRN | Course reference number. |
+| Catalog_ID | Abbreviated course identification with course subject and number. |
+| Section | Course instance with independent meeting times and students. |
+| Credits | Number of credits the course counts for. |
+| Title | The name of the course. |
+| Meetings | A dictionary of the 'timecodes' data with keys and values. |
+| Timecodes | String of course day, meeting times, dates, and meeting location. |
+| Primary_Instructor | The professor who teaches the course. |
+| Cap | Maximum amount of students allowed to enroll in the course. |
+| Act | Actual amount of students rolled in the course. |
+| Rem | Amount of spots remaining in the course. |
+
 </>
-## Faculty
-- primary_instructor: The professor signed on to teach the course.
-- term: Season of the year that the course is offered.
-- crn: Course reference number
+## FACULTY Table
+| Attribute | Description |
+| --- | --- |
+| FID | Surrogate key which identifies a specific instructor.|
+| Primary_Instructor | The professor who teaches the course. |
+
 </>
-## CourseMeetings
-- crn: Course reference number
-- location: Building and room number
-- day: One letter code for each day of the week
-- start: String of the date and time the course begins.
-- end: String of the date and time the course concludes.
+## COURSE_MEETINGS Table
+| Attribute | Description |
+| --- | --- |
+| CMID | Surrogate key which identifies a specific course meeting. |
+| CRN | Course reference number. |
+| Term | Season of the year in which the course is offered. |
+| Location | Room number for a given section. |
+| Day | One letter code to signify which days of the week a section meets. |
+| Start | String of the date and time when a section begins. |
+| End | String of the date and time when a section concludes. |
+
 </>
-## CourseCatalog
-- program_code : Identifies the type of program. 
-- program_name
-- catalog_id
-- course_title : Name of the class at the time.
-- credits: 
-- prereqs: Fundamentl classes needed 
-- coreqs
-- fees
-- attributes
-- description
+## COURSE_CATALOG Table
+| Attribute | Description |
+| --- | --- |
+| CatID | Surrogate key which identifies a specific course within the catalog. |
+| Program_Code | Two or three letter code which identifies the program the course is a part of. |
+| Program_Name | Full name of the program the course is a part of. |
+| Catalog_ID | Course's program code plus the number which identifies the specific course. |
+| Course_Title | Name of the course. |
+| Credits | Number of credits the course counts for. |
+| Prereqs | Conditions that need to be met before being eligible for the specified course. |
+| Coreqs | Course that must be completed before or taken concurrently with the specified course. |
+| Fees | Costs to student associated with the specified course. |
+| Attributes | Unique attributes of a specified course. |
+| Description | Description of the course content and requirements. |
