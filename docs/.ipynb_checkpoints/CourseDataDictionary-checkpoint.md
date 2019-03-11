@@ -21,12 +21,10 @@
 | CID | Surrogate key which identifies a specific course. |
 | CRN | Course reference number. |
 | Term | Season of the year in which the course is offered. |
-| Title | The name of the course. |
 | Section | Course instance with independent meeting times and students. |
 | Cap | Maximum amount of students allowed to enroll in the course. |
 | Act | Actual amount of students rolled in the course. |
 | Rem | Amount of spots remaining in the course. |
-| Credits | Number of credits the course counts for. |
 | FID | Surrogate key which identifies a specific instructor.|
 | CourseCode | Course's program code plus the number which identifies the specific course. |
 
