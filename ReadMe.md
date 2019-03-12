@@ -5,8 +5,8 @@ Michael Nunziata, Diandre Clarke, George Halvatzis
 ### Step 1: ERD
 
 - Based on the csv files provided in the SourceData, we built our ERD with relevant information.
-    - ERD: [CourseDataERD](CourseDataERD.pdf)
-    - Data Dictionary: [CourseDataDictionary](CourseDataDictionary.md)
+    - ERD: [CourseDataERD](docs/CourseDataERD.pdf)
+    - Data Dictionary: [CourseDataDictionary](docs/CourseDataDictionary.md)
     
 ### Step 2: Recreating ERD in SQL
 
@@ -26,7 +26,7 @@ Michael Nunziata, Diandre Clarke, George Halvatzis
 
 - Based on the ERD and SQL tables created earlier, we designed a Star Schema to make extracting data much simpler using SQL.
 - We decided to exclude the course_meetings data as it caused many problems with importing and we still had other questions to explore.
-- Star Schema: [Star Schema](DataWarehouseERD.pdf)
+- Star Schema: [Star Schema](docs/DataWarehouseERD.pdf)
 
 ### Step 5: Data Warehouse Creation
 
