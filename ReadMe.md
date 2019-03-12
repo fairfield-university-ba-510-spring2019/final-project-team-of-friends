@@ -38,4 +38,4 @@ Michael Nunziata, Diandre Clarke, George Halvatzis
 
 - Just as earlier, we performed integrity checks on the Data Warehouse.
 - We ran interesting queries based on questions we thought would be interesting to answer.
-- Notebook: [CourseDataWarehouseTest](CourseDataWarehouseTest.ipynb)
+- Notebook: [CourseDataWarehouseTestAndDemo](CourseDataWarehouseTestAndDemo.ipynb)
